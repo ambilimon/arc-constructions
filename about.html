@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ARC Constructions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation (Same as other pages) -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-900">ARC</span>
+                        <span class="text-xl text-gray-700">Constructions</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link active">About</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-900">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link active">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <header class="pt-24 pb-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-4">About ARC Constructions</h1>
+            <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+                Building excellence through innovation, quality, and dedication since 2000
+            </p>
+        </div>
+    </header>
+
+    <!-- Company Overview -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4">
+                        Founded in 2000, ARC Constructions has grown from a small local contractor to one of the region's most trusted construction companies. Our journey has been built on the foundation of quality, innovation, and customer satisfaction.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        With over two decades of experience in the construction industry, we have successfully completed numerous projects across residential, commercial, and industrial sectors. Our commitment to excellence and sustainable practices has earned us the trust of our clients and recognition in the industry.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-blue-900 mb-2">500+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-blue-900 mb-2">200+</div>
+                            <div class="text-gray-600">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-300 h-96 rounded-lg">
+                        <!-- Replace with actual company image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Company Image Placeholder
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-bullseye text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Our Mission</h2>
+                    </div>
+                    <p class="text-gray-600">
+                        To deliver exceptional construction services that exceed client expectations through innovation, quality craftsmanship, and sustainable practices. We strive to create lasting value for our clients while maintaining the highest standards of safety and professionalism.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-eye text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Our Vision</h2>
+                    </div>
+                    <p class="text-gray-600">
+                        To be the leading construction company known for excellence, innovation, and sustainable development. We aim to shape the future of construction by embracing new technologies and methodologies while nurturing talent and fostering strong relationships with our clients and partners.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-medal text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Excellence</h3>
+                    <p class="text-gray-600">Striving for the highest quality in everything we do</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Integrity</h3>
+                    <p class="text-gray-600">Maintaining honesty and transparency in all dealings</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Innovation</h3>
+                    <p class="text-gray-600">Embracing new ideas and technologies</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Teamwork</h3>
+                    <p class="text-gray-600">Collaborating to achieve common goals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gray-300 h-64">
+                        <!-- Replace with actual team member image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Team Member Image
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">John Doe</h3>
+                        <p class="text-blue-900 mb-4">Chief Executive Officer</p>
+                        <p class="text-gray-600">Over 20 years of experience in construction management and leadership.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gray-300 h-64">
+                        <!-- Replace with actual team member image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Team Member Image
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Jane Smith</h3>
+                        <p class="text-blue-900 mb-4">Technical Director</p>
+                        <p class="text-gray-600">Expert in architectural design and project planning with 15 years of experience.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gray-300 h-64">
+                        <!-- Replace with actual team member image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Team Member Image
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mike Johnson</h3>
+                        <p class="text-blue-900 mb-4">Operations Manager</p>
+                        <p class="text-gray-600">Specialized in project execution and team management with 12 years of experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Certifications</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-certificate text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold">ISO 9001:2015</h3>
+                    <p class="text-gray-600">Quality Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-shield-alt text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold">ISO 45001:2018</h3>
+                    <p class="text-gray-600">Safety Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-leaf text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold">ISO 14001:2015</h3>
+                    <p class="text-gray-600">Environmental Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-award text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold">LEED Certified</h3>
+                    <p class="text-gray-600">Green Building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">ARC Constructions</h4>
+                    <p class="text-gray-400">Building dreams into reality with excellence and innovation.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#construction" class="text-gray-400 hover:text-white">Construction</a></li>
+                        <li><a href="services.html#interior" class="text-gray-400 hover:text-white">Office Interior</a></li>
+                        <li><a href="services.html#architecture" class="text-gray-400 hover:text-white">Architecture Design</a></li>
+                        <li><a href="services.html#civil" class="text-gray-400 hover:text-white">Civil Work</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@arcconstructions.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Construction Ave, City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 ARC Constructions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

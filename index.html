@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Constructions - Building Dreams Into Reality</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-900">ARC</span>
+                        <span class="text-xl text-gray-700">Constructions</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-900">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link active">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen">
+        <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative h-full flex items-center justify-center text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Building Dreams Into Reality</h1>
+                <p class="text-xl text-white mb-8">Excellence in Construction, Design, and Development</p>
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card">
+                    <i class="fas fa-building text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Construction</h3>
+                    <p>Expert construction services for residential and commercial projects.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Training Program</h3>
+                    <p>Professional training programs for construction industry.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-door-open text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Office Interior</h3>
+                    <p>Modern office interior design and implementation.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-map-marked-alt text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Land Survey</h3>
+                    <p>Accurate land surveying services for your projects.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html" class="btn-secondary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Featured Projects</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Discover our most impressive construction projects that showcase our expertise and commitment to excellence.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition duration-300">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building image-placeholder-icon"></i>
+                        </div>
+                        <img src="images/projects/office-complex.jpg" alt="Modern Office Complex" class="hidden">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-900 font-semibold">Commercial</span>
+                        <h3 class="text-xl font-bold mt-2 mb-2">Modern Office Complex</h3>
+                        <p class="text-gray-600 mb-4">State-of-the-art office building with sustainable features and smart technology integration.</p>
+                        <a href="projects.html" class="text-blue-900 hover:text-blue-700 font-semibold">Learn More →</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition duration-300">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-home image-placeholder-icon"></i>
+                        </div>
+                        <img src="images/projects/luxury-apartments.jpg" alt="Luxury Apartments" class="hidden">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-900 font-semibold">Residential</span>
+                        <h3 class="text-xl font-bold mt-2 mb-2">Luxury Apartments</h3>
+                        <p class="text-gray-600 mb-4">Premium residential complex featuring modern amenities and elegant design.</p>
+                        <a href="projects.html" class="text-blue-900 hover:text-blue-700 font-semibold">Learn More →</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition duration-300">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-road image-placeholder-icon"></i>
+                        </div>
+                        <img src="images/projects/highway-bridge.jpg" alt="Highway Bridge" class="hidden">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-900 font-semibold">Infrastructure</span>
+                        <h3 class="text-xl font-bold mt-2 mb-2">Highway Bridge</h3>
+                        <p class="text-gray-600 mb-4">Major infrastructure project connecting cities with advanced engineering solutions.</p>
+                        <a href="projects.html" class="text-blue-900 hover:text-blue-700 font-semibold">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="projects.html" class="btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Why Choose Us</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">We bring together expertise, innovation, and dedication to deliver exceptional construction solutions.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-medal text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">25+ Years Experience</h3>
+                    <p class="text-gray-600">Decades of expertise in delivering quality construction projects.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-users text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Expert Team</h3>
+                    <p class="text-gray-600">Highly skilled professionals dedicated to excellence.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-certificate text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Quality Assured</h3>
+                    <p class="text-gray-600">ISO certified processes ensuring highest quality standards.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-leaf text-2xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sustainable Practices</h3>
+                    <p class="text-gray-600">Commitment to environmentally responsible construction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Statistics -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <div class="text-gray-300">Projects Completed</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-2">200+</div>
+                    <div class="text-gray-300">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-2">150+</div>
+                    <div class="text-gray-300">Expert Team</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-2">25+</div>
+                    <div class="text-gray-300">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Client Testimonials</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">What our clients say about our services and commitment to excellence.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-quote-left text-3xl"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"ARC Constructions delivered our office complex project on time and within budget. Their attention to detail and professional approach was impressive."</p>
+                    <div class="flex items-center">
+                        <div class="testimonial-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user image-placeholder-icon"></i>
+                            </div>
+                            <img src="images/testimonials/john-smith.jpg" alt="John Smith" class="hidden">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">John Smith</h4>
+                            <p class="text-gray-600">CEO, Tech Solutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-quote-left text-3xl"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The team's expertise in sustainable construction practices helped us achieve LEED certification. Highly recommended for green building projects."</p>
+                    <div class="flex items-center">
+                        <div class="testimonial-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user image-placeholder-icon"></i>
+                            </div>
+                            <img src="images/testimonials/sarah-johnson.jpg" alt="Sarah Johnson" class="hidden">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-600">Director, Green Developments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-quote-left text-3xl"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Outstanding service from start to finish. The team's communication and project management skills made the entire process smooth and stress-free."</p>
+                    <div class="flex items-center">
+                        <div class="testimonial-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user image-placeholder-icon"></i>
+                            </div>
+                            <img src="images/testimonials/michael-brown.jpg" alt="Michael Brown" class="hidden">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Brown</h4>
+                            <p class="text-gray-600">Property Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Latest News</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Stay updated with our latest projects, industry insights, and company news.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-newspaper image-placeholder-icon"></i>
+                        </div>
+                        <img src="images/news/sustainable-construction.jpg" alt="Sustainable Construction Trends" class="hidden">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">March 15, 2024</div>
+                        <h3 class="text-xl font-bold mb-2">Sustainable Construction Trends 2024</h3>
+                        <p class="text-gray-600 mb-4">Exploring the latest trends in sustainable construction and green building practices.</p>
+                        <a href="#" class="text-blue-900 hover:text-blue-700 font-semibold">Read More →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gray-300 h-48 relative overflow-hidden">
+                        <img src="images/news/new-project.jpg" alt="New Project Announcement" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">March 10, 2024</div>
+                        <h3 class="text-xl font-bold mb-2">New Project Announcement</h3>
+                        <p class="text-gray-600 mb-4">ARC Constructions selected for major infrastructure development project.</p>
+                        <a href="#" class="text-blue-900 hover:text-blue-700 font-semibold">Read More →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gray-300 h-48 relative overflow-hidden">
+                        <img src="images/news/award.jpg" alt="Industry Recognition" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">March 5, 2024</div>
+                        <h3 class="text-xl font-bold mb-2">Industry Recognition</h3>
+                        <p class="text-gray-600 mb-4">ARC Constructions receives award for excellence in sustainable construction.</p>
+                        <a href="#" class="text-blue-900 hover:text-blue-700 font-semibold">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Callback Request Form -->
+    <section class="py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Request a Callback</h2>
+            <p class="text-gray-600 text-center mb-12">Fill out the form below and our team will get back to you within 24 hours.</p>
+            
+            <form id="callbackForm" class="bg-white rounded-lg shadow-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <!-- Name Input -->
+                    <div>
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent"
+                            placeholder="Enter your name">
+                    </div>
+                    
+                    <!-- Company Name Input -->
+                    <div>
+                        <label for="company" class="block text-gray-700 font-semibold mb-2">Company Name</label>
+                        <input type="text" id="company" name="company"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent"
+                            placeholder="Enter company name">
+                    </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="mb-6">
+                    <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent"
+                        placeholder="Enter your phone number">
+                </div>
+
+                <!-- Services Checkboxes -->
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-3">Services Interested In *</label>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="construction" name="services[]" value="construction"
+                                class="w-4 h-4 text-blue-900 border-gray-300 rounded focus:ring-blue-900">
+                            <label for="construction" class="ml-2 text-gray-700">Construction</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="training" name="services[]" value="training"
+                                class="w-4 h-4 text-blue-900 border-gray-300 rounded focus:ring-blue-900">
+                            <label for="training" class="ml-2 text-gray-700">Training Program</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="interior" name="services[]" value="interior"
+                                class="w-4 h-4 text-blue-900 border-gray-300 rounded focus:ring-blue-900">
+                            <label for="interior" class="ml-2 text-gray-700">Office Interior</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="survey" name="services[]" value="survey"
+                                class="w-4 h-4 text-blue-900 border-gray-300 rounded focus:ring-blue-900">
+                            <label for="survey" class="ml-2 text-gray-700">Land Survey</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Box -->
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="4"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent"
+                        placeholder="Tell us more about your project requirements"></textarea>
+                </div>
+
+                <!-- Preferred Contact Time -->
+                <div class="mb-6">
+                    <label for="callTime" class="block text-gray-700 font-semibold mb-2">Preferred Callback Time *</label>
+                    <select id="callTime" name="callTime" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+                        <option value="">Select preferred time</option>
+                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                        <option value="evening">Evening (4 PM - 7 PM)</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn-primary bg-blue-900 hover:bg-blue-800">
+                        Request Callback
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Let's work together to bring your construction vision to life. Contact us today for a free consultation.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="contact.html" class="btn-primary bg-white text-blue-900 hover:bg-gray-100">Get in Touch</a>
+                <a href="projects.html" class="btn-secondary border-white text-white hover:bg-white hover:text-blue-900">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">ARC Constructions</h4>
+                    <p class="text-gray-400">Building dreams into reality with excellence and innovation.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#construction" class="text-gray-400 hover:text-white">Construction</a></li>
+                        <li><a href="services.html#interior" class="text-gray-400 hover:text-white">Office Interior</a></li>
+                        <li><a href="services.html#architecture" class="text-gray-400 hover:text-white">Architecture Design</a></li>
+                        <li><a href="services.html#civil" class="text-gray-400 hover:text-white">Civil Work</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@arcconstructions.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Construction Ave, City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 ARC Constructions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - ARC Constructions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation (Same as other pages) -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-900">ARC</span>
+                        <span class="text-xl text-gray-700">Constructions</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="projects.html" class="nav-link active">Projects</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-900">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="projects.html" class="mobile-nav-link active">Projects</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <header class="pt-24 pb-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-4">Our Projects</h1>
+            <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+                Explore our portfolio of successful projects that showcase our expertise and commitment to excellence
+            </p>
+        </div>
+    </header>
+
+    <!-- Project Categories -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="category-btn active" data-category="all">All Projects</button>
+                <button class="category-btn" data-category="residential">Residential</button>
+                <button class="category-btn" data-category="commercial">Commercial</button>
+                <button class="category-btn" data-category="industrial">Industrial</button>
+                <button class="category-btn" data-category="infrastructure">Infrastructure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="bg-gray-300 h-64 rounded-t-lg">
+                        <!-- Replace with actual project image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Project Image
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Modern Office Complex</h3>
+                        <p class="text-gray-600 mb-4">A state-of-the-art office complex featuring sustainable design and smart building technology.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-900">Commercial</span>
+                            <button class="text-blue-900 hover:text-blue-700" onclick="showProjectDetails('project1')">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="residential">
+                    <div class="bg-gray-300 h-64 rounded-t-lg">
+                        <!-- Replace with actual project image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Project Image
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Luxury Residential Complex</h3>
+                        <p class="text-gray-600 mb-4">Premium residential apartments with modern amenities and elegant design.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-900">Residential</span>
+                            <button class="text-blue-900 hover:text-blue-700" onclick="showProjectDetails('project2')">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="industrial">
+                    <div class="bg-gray-300 h-64 rounded-t-lg">
+                        <!-- Replace with actual project image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Project Image
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Manufacturing Facility</h3>
+                        <p class="text-gray-600 mb-4">Modern manufacturing facility with advanced automation and safety features.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-900">Industrial</span>
+                            <button class="text-blue-900 hover:text-blue-700" onclick="showProjectDetails('project3')">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="infrastructure">
+                    <div class="bg-gray-300 h-64 rounded-t-lg">
+                        <!-- Replace with actual project image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Project Image
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Highway Bridge Project</h3>
+                        <p class="text-gray-600 mb-4">Major infrastructure project connecting two cities with advanced engineering.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-900">Infrastructure</span>
+                            <button class="text-blue-900 hover:text-blue-700" onclick="showProjectDetails('project4')">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="bg-gray-300 h-64 rounded-t-lg">
+                        <!-- Replace with actual project image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Project Image
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Shopping Mall Complex</h3>
+                        <p class="text-gray-600 mb-4">Modern shopping complex with entertainment facilities and parking structure.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-900">Commercial</span>
+                            <button class="text-blue-900 hover:text-blue-700" onclick="showProjectDetails('project5')">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="residential">
+                    <div class="bg-gray-300 h-64 rounded-t-lg">
+                        <!-- Replace with actual project image -->
+                        <div class="w-full h-full flex items-center justify-center text-gray-500">
+                            Project Image
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Smart Home Community</h3>
+                        <p class="text-gray-600 mb-4">Eco-friendly residential community with smart home technology integration.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-900">Residential</span>
+                            <button class="text-blue-900 hover:text-blue-700" onclick="showProjectDetails('project6')">
+                                View Details <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-blue-900 mb-2">150+</div>
+                    <div class="text-gray-600">Residential Projects</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-blue-900 mb-2">200+</div>
+                    <div class="text-gray-600">Commercial Projects</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-blue-900 mb-2">75+</div>
+                    <div class="text-gray-600">Industrial Projects</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-blue-900 mb-2">50+</div>
+                    <div class="text-gray-600">Infrastructure Projects</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold" id="modal-title"></h3>
+                        <button onclick="closeProjectModal()" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                    <div id="modal-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">ARC Constructions</h4>
+                    <p class="text-gray-400">Building dreams into reality with excellence and innovation.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#construction" class="text-gray-400 hover:text-white">Construction</a></li>
+                        <li><a href="services.html#interior" class="text-gray-400 hover:text-white">Office Interior</a></li>
+                        <li><a href="services.html#architecture" class="text-gray-400 hover:text-white">Architecture Design</a></li>
+                        <li><a href="services.html#civil" class="text-gray-400 hover:text-white">Civil Work</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@arcconstructions.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Construction Ave, City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 ARC Constructions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

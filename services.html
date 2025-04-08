@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - ARC Constructions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation (Same as index.html) -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-900">ARC</span>
+                        <span class="text-xl text-gray-700">Constructions</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="services.html" class="nav-link active">Services</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-900">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link active">Services</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <header class="pt-24 pb-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-4">Our Services</h1>
+            <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">
+                Comprehensive construction and development solutions tailored to your needs
+            </p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Construction -->
+                <div id="construction" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-building text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Construction</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Expert construction services for residential, commercial, and industrial projects. We handle everything from initial planning to final execution.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Residential Construction</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Commercial Buildings</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Industrial Facilities</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Renovation Projects</li>
+                    </ul>
+                </div>
+
+                <!-- Training Program -->
+                <div id="training" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Training Program</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Professional training programs designed to enhance skills and knowledge in the construction industry.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Construction Management</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety Protocols</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Technical Skills Development</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Certification Programs</li>
+                    </ul>
+                </div>
+
+                <!-- Office Interior -->
+                <div id="interior" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-door-open text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Office Interior</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Modern office interior design and implementation services to create productive workspaces.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Space Planning</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Interior Design</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Furniture Selection</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Lighting Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Land Survey -->
+                <div id="survey" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-map-marked-alt text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Land Survey</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive land surveying services for accurate property measurements and planning.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Topographic Surveys</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Boundary Surveys</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Construction Staking</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>GPS Mapping</li>
+                    </ul>
+                </div>
+
+                <!-- Architecture Design -->
+                <div id="architecture" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-drafting-compass text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Architecture Design</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Creative architectural design services that blend functionality with aesthetics.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Concept Development</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>3D Visualization</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Construction Documents</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Sustainable Design</li>
+                    </ul>
+                </div>
+
+                <!-- Civil Work -->
+                <div id="civil" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-road text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Civil Work</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive civil engineering and construction services for infrastructure projects.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Road Construction</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Drainage Systems</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Site Development</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Infrastructure Projects</li>
+                    </ul>
+                </div>
+
+                <!-- Material and Labour Supply -->
+                <div id="supply" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tools text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Material and Labour Supply</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Reliable supply of construction materials and skilled labor for your projects.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Construction Materials</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Skilled Labor Force</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Equipment Rental</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Project Management</li>
+                    </ul>
+                </div>
+
+                <!-- Supply of Goods and Services -->
+                <div id="goods" class="service-detail-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-truck text-3xl text-blue-900 mr-4"></i>
+                        <h2 class="text-2xl font-bold">Supply of Goods and Services</h2>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive supply chain solutions for construction-related goods and services.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Building Materials</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Construction Equipment</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety Equipment</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Logistics Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-8">Contact us today for a free consultation and quote</p>
+            <a href="contact.html" class="btn-primary bg-white text-blue-900 hover:bg-gray-100">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">ARC Constructions</h4>
+                    <p class="text-gray-400">Building dreams into reality with excellence and innovation.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#construction" class="text-gray-400 hover:text-white">Construction</a></li>
+                        <li><a href="#interior" class="text-gray-400 hover:text-white">Office Interior</a></li>
+                        <li><a href="#architecture" class="text-gray-400 hover:text-white">Architecture Design</a></li>
+                        <li><a href="#civil" class="text-gray-400 hover:text-white">Civil Work</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@arcconstructions.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Construction Ave, City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 ARC Constructions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
